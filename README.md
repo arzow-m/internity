@@ -1,4 +1,38 @@
-# internity
+### Potential File Structure
+```faang-interview-bot/
+│
+├── frontend/                  # React frontend (chat UI, scoring, etc.)
+│   ├── public/                # Static assets
+│   ├── src/
+│   │   ├── components/        # Reusable React components (ChatBox, ScoreCard, etc.)
+│   │   ├── pages/             # Main routes or views
+│   │   ├── hooks/             # Custom React hooks (e.g., useChat)
+│   │   ├── api/               # Frontend API calls to backend
+│   │   ├── styles/            # Tailwind config or custom CSS
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── tailwind.config.js
+│   └── package.json
+│
+├── backend/                   # FastAPI backend
+│   ├── app/
+│   │   ├── routes/            # API endpoints (e.g., /evaluate, /ask)
+│   │   ├── services/          # Core logic (LLM prompts, scoring, etc.)
+│   │   ├── models/            # Pydantic models (input/output schemas)
+│   │   ├── database/          # DB connection logic (Supabase/MongoDB)
+│   │   └── main.py            # FastAPI app entry point
+│   ├── requirements.txt       # Backend dependencies
+│   └── .env                   # API keys, secrets
+│
+├── shared/                    # (Optional) Shared prompt templates, config, docs
+│   ├── prompts/
+│   ├── constants/
+│   └── README.md
+│
+├── .gitignore
+├── README.md
+└── LICENSE
+```
 
 ### GitHub Cheat Sheet for Collaboration
 ```
